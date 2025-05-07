@@ -1,4 +1,4 @@
-# 12. Fix the code
+# 12. Event bubbling
 
 ## Question
 
@@ -38,7 +38,7 @@ function App() {
 2. The onClick event handler for the child element is triggered first, which is the
    handleClick function.
 3. After the handleClick function for the child element is executed, the event **continues to bubble up through the DOM hierarchy to the parent element.**
-4. The onClick event handler for the parent element is also triggered, and the same handleClick function is called again with the event object representing the parent element.
+4. The onClick event handler for the **parent element is also triggered**, and the same handleClick function is called again with the event object representing the parent element.
 
 - You can use the stopPropagation() method to stop the event from continuing to bubble up the DOM hierarchy when an event occurs on a child element.
 
